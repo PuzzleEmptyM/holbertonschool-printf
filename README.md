@@ -13,8 +13,8 @@ Syntaxis
 Compilation
 Paramaters
 
-#Authors
-##PuzzleEmptym
+# Authors
+## PuzzleEmptym
 With help from
-##Joshua Taylor
-##Isaiah Hamstard
+## Joshua Taylor
+## Isaiah Hamstard
