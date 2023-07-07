@@ -13,7 +13,7 @@ Syntaxis
 Compilation
 Paramaters
 
-# Authors
+# Author
 ### PuzzleEmptym
 # With help from
 ### Joshua Taylor
