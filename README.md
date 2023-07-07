@@ -14,7 +14,7 @@ Compilation
 Paramaters
 
 # Authors
-## PuzzleEmptym
-With help from
-## Joshua Taylor
-## Isaiah Hamstard
+### PuzzleEmptym
+# With help from
+### Joshua Taylor
+### Isaiah Hamstard
