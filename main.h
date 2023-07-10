@@ -12,11 +12,11 @@ typedef struct types
 
 int _putchar(char c);
 int _printf(const char *format, ...);
-int print_letters(va_list list);
 int print_char(va_list list);
-int print_string(va_list lists);
-int print_int(va_list lists);
+int print_string(va_list list);
+int print_int(va_list list);
 int print_char2(char c);
+int Format(char tempc, va_list list);
 
 
 #endif
