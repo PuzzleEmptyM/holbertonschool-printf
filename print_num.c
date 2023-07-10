@@ -22,7 +22,7 @@ int print_int(va_list list)
 	varg3 = va_arg(list, unsigned int);
 	varg3s = varg3;
 	varg33 = varg3;
-	if (varg3)
+	if (varg3s < 0)
 	{
 		_putchar('-');
 		i++;
