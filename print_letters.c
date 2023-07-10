@@ -9,4 +9,15 @@
 
 int print_letters(va_list list)
 {
+	in i;
+	char *varg;
+
+	i = 0;
+	varg = va_arg(list, char *)
+		while (varg[i] == '\0')
+		{
+			_putchar(varg[i]);
+			i++;
+		}
+	return(i);
 }
