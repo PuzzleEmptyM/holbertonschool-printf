@@ -53,7 +53,7 @@ int print_string(va_list list)
 			_putchar(varg2[i]);
 			i++;
 		}
-		return(i);
+		return (i);
 	}
 	else
 		return (-1);
