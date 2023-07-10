@@ -18,7 +18,7 @@ int print_char(va_list list)
 
 /**
  * print_char2 - alphabetic characters
- * @list: list of args
+ * @c: list of args
  *
  * Return: returns thenumber of characters printed or -1
  */
