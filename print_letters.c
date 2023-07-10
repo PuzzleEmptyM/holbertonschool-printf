@@ -12,20 +12,17 @@ int print_char(va_list list)
 	int varg;
 
 	varg = va_arg(list, int);
-	if (varg)
-	{
-		_putchar(varg);
-		return (1);
-	}
+	_putchar(varg);
 	return (-1);
 }
 
 /**
- * print_char - alphabetic characters
+ * print_char2 - alphabetic characters
  * @list: list of args
  *
  * Return: returns thenumber of characters printed or -1
  */
+
 int print_char2(char c)
 {
 	if (c == ' ')
@@ -42,7 +39,7 @@ int print_char2(char c)
  * Return: the number of characters printed or -1
  */
 
-int print_strings(va_list list)
+int print_string(va_list list)
 {
 	char *varg2;
 	int i;

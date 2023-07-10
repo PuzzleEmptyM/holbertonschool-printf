@@ -3,7 +3,7 @@
 /**
  * Format - Prints the values given with a separator
  * @tempc: The value to compare to format
- * @list: The arguement list to pass to resulting function
+ * @list: The argument list to pass to resulting function
  *
  * Return: Returns the number of characters printed or -1
  */
