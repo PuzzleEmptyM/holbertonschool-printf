@@ -13,7 +13,7 @@ int print_char(va_list list)
 
 	varg = va_arg(list, int);
 	_putchar(varg);
-	return (-1);
+	return (1);
 }
 
 /**
@@ -56,5 +56,13 @@ int print_string(va_list list)
 		return (i);
 	}
 	else
-		return (-1);
+	{
+		_putchar('(');
+		_putchar('n');
+		_putchar('u');
+		_putchar('l');
+		_putchar('l');
+		_putchar(')');
+		return (6);
+	}
 }
