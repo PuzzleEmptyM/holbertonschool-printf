@@ -1,23 +1,63 @@
 #include "main.h"
 
 /**
- * print_letters - alphabet characters
- * @list: the valie to be printed
+ * print_char - alphabet characters
+ * @list: list of args
  *
  * Return: returns the number of characters printed or -1
  */
 
-int print_letters(va_list list)
+int print_char(va_list list)
 {
-	in i;
-	char *varg;
+	int varg;
+
+	varg = va_arg(list, int);
+	if (varg)
+	{
+		_putchar(varg);
+		return (1);
+	}
+	return (-1);
+}
+
+/**
+ * print_char - alphabetic characters
+ * @list: list of args
+ *
+ * Return: returns thenumber of characters printed or -1
+ */
+int print_char2(char c)
+{
+	if (c == ' ')
+		_putchar(' ');
+	else
+		_putchar(c);
+	return (1);
+}
+
+/**
+ * print_string - prints string
+ * @list: list of args
+ *
+ * Return: the number of characters printed or -1
+ */
+
+int print_strings(va_list list)
+{
+	char *varg2;
+	int i;
 
 	i = 0;
-	varg = va_arg(list, char *)
-		while (varg[i] == '\0')
+	varg2 = va_arg(list, char *);
+	if (varg2 != NULL)
+	{
+		while (varg2[i] != '\0')
 		{
-			_putchar(varg[i]);
+			_putchar(varg2[i]);
 			i++;
 		}
-	return(i);
+		return(i);
+	}
+	else
+		return (-1);
 }
