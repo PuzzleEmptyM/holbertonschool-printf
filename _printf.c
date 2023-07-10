@@ -10,45 +10,47 @@
 int _printf(const char * const format, ...)
 {
 	va_list list;
-	int i;
-	int i2;
-	int *ipass;
-	int cprinted;
-	true_types stuff = {
-		{"c", print_letters},
-		{"s", print_letters},
-		{"d", print_numbers},
-		{"i", print_numbers},
-		{"%", print_symbols},
-		{"\\", print_letters},
+	int i, i2, cprinted;
+	char tempc;
+	true_types stuff[] = {
+		{"c", print_char},
+		{"s", print_string},
+		{"d", print_int},
+		{"i", print_int},
+		{"%", NULL},
 		{NULL, NULL},
 	};
 
-	i = 0;
-	i2 = 0;
-	cprinted = 0;
-	ipass = i;
+	i = 0, i2 = 0, cprinted = 0;
 	if (format == NULL)
 		return (-1);
 	va_start(list, format);
-	while (format[i] != '\0')
+	while (format && format[i])
 	{
-		i2 = 0;
-		while (stuff[i2])
+		tempc = format[i];
+		if (tempc == '%')
 		{
-			if (format[i] == *stuff[i2];
-
-			if ((format[i] == "%") || (format[i] == "\\"))
-				if (format[i] == stuff[i2].found)
-					cprinted = stuff[i2].doThis(list);
-			else
+			i++;
+			tempc = format[i];
+			while (i2 < 5)
 			{
-				cprinted = print_letters(list, *ipass);
-				i = pass;
+				if (tempc == *stuff[i2].found)
+				{
+					cprinted = cprinted + stuff[i2].doThis(list);
+					i2 = 15;
+				}
+				else
+					i2++;
 			}
-			i2++;
+			cprinted = cprinted + print_char2(format[i - 1]);
+			if (i2 == 15)
+				i--;
 		}
-		i++
+		else
+			cprinted = cprinted + print_char2(format[i]);
+		i++;
+		i2 = 0;
 	}
-	return(cprinted);
+	va_end(list);
+	return (cprinted);
 }
