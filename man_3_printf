@@ -4,38 +4,73 @@
 
 _printf - A custom implementation of the printf() function
 
-.SH LIBRARY
-
-/root/holbertonschool-printf
-
 .SH SYNOPSIS
 
-#include "main.h"
+.B #include "main.h"
 
-int _printf(const char *format, ...);
+.B int _printf(const char *format, ...);
 
 .SH DESCRIPTION
-The _printf() function is a custom implementation of the printf() function. It can be used to print formatted output to the standard output stream.
 
-The syntax of the _printf() function is as follows:
+.B _printf()
+is a custom implementation of the
+.BR printf()
+function. It can be used to print formatted output to the standard output stream.
 
-_printf("format", arguments);
+The syntax of the
+.B _printf()
+function is as follows:
 
-The format string is a format string that specifies how the output should be formatted. The arguments are the values that will be used to fill in the format specifiers in the format string.
+.BI _printf("format", arguments);
 
+The
+.I format
+string is a format string that specifies how the output should be formatted. The
+.I arguments
+are the values that will be used to fill in the format specifiers in the
+.I format
+string.
 
-The _printf() function supports the following format specifiers:
+.SH FORMAT SPECIFIERS
 
-c - Print a single character.
-s - Print a string of characters.
-d - Print a decimal integer.
-i - Print an integer.
-% - Print a literal percent sign.
+.B _printf()
+supports the following format specifiers:
+
+.TP
+.B c
+Print a single character.
+.TP
+.B s
+Print a string of characters.
+.TP
+.B d
+Print a decimal integer.
+.TP
+.B i
+Print an integer.
+.TP
+.B %
+Print a literal percent sign.
 
 .SH EXAMPLES
 
-Here are some examples of how to use the _printf() function:
+.RS
+.B _printf("This is a test.\n");
+.br
+.B _printf("The value of %d is 10.\n", 10);
+.br
+.B _printf("The string \"hello\" is printed.\n");
+.RE
 
-_printf("This is a test.\n");
-_printf("The value of %d is 10.\n", 10);
-_printf("The string "hello" is printed.\n");
+.SH SEE ALSO
+
+.BR printf(3)
+
+.SH AUTHOR
+
+This man page was written by Bard.
+
+.SH BUGS
+
+No known bugs.
+
