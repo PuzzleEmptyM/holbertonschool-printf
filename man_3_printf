@@ -1,15 +1,20 @@
-NAME
+.TH man 3 "July 11 2023" "Puzzle"
+
+.SH NAME
 
 _printf - A custom implementation of the printf() function
 
-SYNOPSIS
+.SH LIBRARY
+
+/root/holbertonschool-printf
+
+.SH SYNOPSIS
 
 #include "main.h"
 
 int _printf(const char *format, ...);
 
-DESCRIPTION
-
+.SH DESCRIPTION
 The _printf() function is a custom implementation of the printf() function. It can be used to print formatted output to the standard output stream.
 
 The syntax of the _printf() function is as follows:
@@ -18,6 +23,7 @@ _printf("format", arguments);
 
 The format string is a format string that specifies how the output should be formatted. The arguments are the values that will be used to fill in the format specifiers in the format string.
 
+
 The _printf() function supports the following format specifiers:
 
 c - Print a single character.
@@ -25,6 +31,9 @@ s - Print a string of characters.
 d - Print a decimal integer.
 i - Print an integer.
 % - Print a literal percent sign.
+
+.SH EXAMPLES
+
 Here are some examples of how to use the _printf() function:
 
 _printf("This is a test.\n");
